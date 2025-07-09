@@ -1,6 +1,7 @@
+# In your render.yaml (must be in root folder)
 services:
   - type: static
     name: todo-app
-    rootDirectory: "/client"  # 👈 Case-sensitive!
-    buildCommand: "cd client && npm install && npm run build"
-    staticPublishPath: "./build"  # Not "./client/build"
+    rootDirectory: "/client"
+    buildCommand: "cd client && npm install && npm run build"  # 👈 THIS WAS MISSING
+    staticPublishPath: "./build"
